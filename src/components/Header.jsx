@@ -98,7 +98,7 @@ const Header = () => {
               </div>
             </div>
             <nav className="col-span-12 hidden md:col-span-8 md:block lg:col-span-12">
-              <div className="mt-6 flex justify-end space-x-6 font-sans font-semibold uppercase text-zinc-600 md:text-base lg:text-sm">
+              <div className="mt-6 flex justify-end space-x-6 font-sans font-semibold uppercase tracking-[0.2rem] text-zinc-600 md:text-base lg:text-sm">
                 <Link
                   to="/"
                   className="transition-colors duration-200 hover:text-black"

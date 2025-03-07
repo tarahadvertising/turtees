@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PropTypes from "prop-types";
 import { AnimatePresence } from "framer-motion";
+import BreastPumbs from "./pages/BreastPumbs";
+import InstaPosts from "./components/InstaPosts";
 
 const pageVariants = {
   initial: { opacity: 0, y: 50 },
@@ -35,7 +37,10 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        {[{ path: "/", element: <Home /> }].map(({ path, element }, index) => (
+        {[
+          { path: "/", element: <Home /> },
+          { path: "/breast-pumbs", element: <BreastPumbs /> },
+        ].map(({ path, element }, index) => (
           <Route
             key={index}
             path={path}
@@ -72,6 +77,7 @@ function App() {
       <PageLoader loading={loading} />
       <Header />
       <AnimatedRoutes />
+      <InstaPosts />
       <Footer />
     </Router>
   );

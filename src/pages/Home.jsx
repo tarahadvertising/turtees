@@ -29,7 +29,7 @@ const Home = () => {
               src="/images/product_rails/bath_potty.webp"
             />
             <h2 className="mt-5 text-xl font-bold uppercase text-black">
-              Potty Seat
+              Bath & Potty Time
             </h2>
             <p className="mt-2 font-serif text-lg leading-snug text-black">
               Keep your little one clean and comfy with our gentle, safe, and
@@ -145,46 +145,6 @@ const Home = () => {
               <button className="mt-5 rounded-full bg-primary-500 px-12 py-4 text-3xl font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600">
                 Explore More
               </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="bg-primary-50 py-12">
-        <div className="container mx-auto">
-          <h2 className="mb-5 text-center text-5xl font-bold uppercase text-zinc-700">
-            The Edit
-          </h2>
-          <p className="mx-auto mb-12 w-9/12 text-center text-sm leading-loose text-zinc-500">
-            The Edit is here to guide you through this incredible journey. We
-            work with parenting experts to offer the advice and support you
-            really need, talk to parents about their real-life experiences –
-            plus there’s a whole lot of inspiration and escapism too.
-          </p>
-          <div className="flex w-full gap-x-4">
-            <div className="w-1/5">
-              <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="/images/insta_links/1.webp" alt="Instagram Link" />
-              </a>
-            </div>
-            <div className="w-1/5">
-              <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="/images/insta_links/1.webp" />
-              </a>
-            </div>
-            <div className="w-1/5">
-              <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="/images/insta_links/1.webp" />
-              </a>
-            </div>
-            <div className="w-1/5">
-              <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="/images/insta_links/1.webp" />
-              </a>
-            </div>
-            <div className="w-1/5">
-              <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="/images/insta_links/1.webp" />
-              </a>
             </div>
           </div>
         </div>
