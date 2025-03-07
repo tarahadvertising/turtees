@@ -26,7 +26,7 @@ const Home = () => {
           <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
             <img
               className="h-72 w-full rounded-2xl"
-              src="../../public/images/product_rails/bath_potty.webp"
+              src="/images/product_rails/bath_potty.webp"
             />
             <h2 className="mt-5 text-xl font-bold uppercase text-black">
               Potty Seat
@@ -42,7 +42,7 @@ const Home = () => {
           <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
             <img
               className="h-72 w-full rounded-2xl"
-              src="../../public/images/product_rails/breast_pumbs.webp"
+              src="/images/product_rails/breast_pumbs.webp"
             />
             <h2 className="mt-5 text-xl font-bold uppercase text-black">
               Breast Pumps
@@ -59,7 +59,7 @@ const Home = () => {
           <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
             <img
               className="h-72 w-full rounded-2xl"
-              src="../../public/images/product_rails/feeding bottle.webp"
+              src="/images/product_rails/feeding bottle.webp"
             />
             <h2 className="mt-5 text-xl font-bold uppercase text-black">
               Feeding Bottle
@@ -76,7 +76,7 @@ const Home = () => {
           <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
             <img
               className="h-72 w-full rounded-2xl"
-              src="../../public/images/product_rails/baby_rattles.webp"
+              src="/images/product_rails/baby_rattles.webp"
             />
             <h2 className="my-5 text-xl font-bold uppercase text-black">
               Baby Rattles
@@ -163,30 +163,27 @@ const Home = () => {
           <div className="flex w-full gap-x-4">
             <div className="w-1/5">
               <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img
-                  src="../../public/images/insta_links/1.webp"
-                  alt="Instagram Link"
-                />
+                <img src="/images/insta_links/1.webp" alt="Instagram Link" />
               </a>
             </div>
             <div className="w-1/5">
               <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="../../public/images/insta_links/1.webp" />
+                <img src="/images/insta_links/1.webp" />
               </a>
             </div>
             <div className="w-1/5">
               <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="../../public/images/insta_links/1.webp" />
+                <img src="/images/insta_links/1.webp" />
               </a>
             </div>
             <div className="w-1/5">
               <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="../../public/images/insta_links/1.webp" />
+                <img src="/images/insta_links/1.webp" />
               </a>
             </div>
             <div className="w-1/5">
               <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
-                <img src="../../public/images/insta_links/1.webp" />
+                <img src="/images/insta_links/1.webp" />
               </a>
             </div>
           </div>

@@ -47,10 +47,7 @@ const Header = () => {
                   placeholder="What are you looking for"
                 />
                 <button className="absolute right-6 top-1/2 flex -translate-y-1/2 gap-x-2">
-                  <img
-                    className="w-5"
-                    src="../../public/images/icons/search.svg"
-                  />
+                  <img className="w-5" src="/images/icons/search.svg" />
                   <p className="text-sm font-bold text-black">Search</p>
                 </button>
               </div>
@@ -61,7 +58,7 @@ const Header = () => {
                   target="_blank"
                 >
                   <img
-                    src="./public/images/icons/facebook.svg"
+                    src="/images/icons/facebook.svg"
                     class="h-5 w-5"
                     alt="facebook icon"
                   />
@@ -71,7 +68,7 @@ const Header = () => {
                   class="rounded-full bg-primary-700 p-2 transition duration-300 ease-in-out hover:scale-110"
                 >
                   <img
-                    src="./public/images/icons/instagram.svg"
+                    src="/images/icons/instagram.svg"
                     class="h-5 w-5"
                     alt="instagram icon"
                   />
@@ -82,7 +79,7 @@ const Header = () => {
                   class="rounded-full bg-primary-700 p-2 transition duration-300 ease-in-out hover:scale-110"
                 >
                   <img
-                    src="./public/images/icons/youtube.svg"
+                    src="/images/icons/youtube.svg"
                     class="h-5 w-5"
                     alt="youtube icon"
                   />
@@ -93,7 +90,7 @@ const Header = () => {
                   target="_blank"
                 >
                   <img
-                    src="./public/images/icons/threads.svg"
+                    src="/images/icons/threads.svg"
                     class="h-5 w-5"
                     alt="threads icon"
                   />

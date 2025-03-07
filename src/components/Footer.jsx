@@ -26,7 +26,7 @@ const Footer = () => {
                   target="_blank"
                 >
                   <img
-                    src="./public/images/icons/facebook_black.svg"
+                    src="/images/icons/facebook_black.svg"
                     class="h-5 w-5"
                     alt="facebook icon"
                   />
@@ -36,7 +36,7 @@ const Footer = () => {
                   class="rounded-full border border-black p-2 transition duration-300 ease-in-out hover:scale-110"
                 >
                   <img
-                    src="./public/images/icons/instagram_black.svg"
+                    src="/images/icons/instagram_black.svg"
                     class="h-5 w-5"
                     alt="instagram icon"
                   />
@@ -47,7 +47,7 @@ const Footer = () => {
                   class="rounded-full border border-black p-2 transition duration-300 ease-in-out hover:scale-110"
                 >
                   <img
-                    src="./public/images/icons/youtube_black.svg"
+                    src="/images/icons/youtube_black.svg"
                     class="h-5 w-5"
                     alt="youtube icon"
                   />
@@ -58,7 +58,7 @@ const Footer = () => {
                   target="_blank"
                 >
                   <img
-                    src="./public/images/icons/threads_black.svg"
+                    src="/images/icons/threads_black.svg"
                     class="h-5 w-5"
                     alt="threads icon"
                   />
@@ -84,7 +84,7 @@ const Footer = () => {
           <div className="grid grid-cols-12 py-6">
             <div className="col-span-2">
               <a>
-                <img className="w-4/5" src="../../public/images/logo.svg" />
+                <img className="w-4/5" src=".././images/logo.svg" />
               </a>
             </div>
             <div className="col-span-9 flex flex-col items-center justify-center">
@@ -92,26 +92,14 @@ const Footer = () => {
                 <p className="text-sm text-zinc-700">Our customers say</p>
                 <h5 className="text-sm font-semibold text-black">Excellent</h5>
                 <div className="flex gap-x-1">
+                  <img className="w-5" src=".././images/icons/star.svg"></img>
                   <img
                     className="w-5"
-                    src="../../public/images/icons/star.svg"
-                  ></img>
-                  <img
-                    className="w-5"
-                    src="../../public/images/icons/star.svg"
+                    src=".././images/icons/star.svg"
                   ></img>{" "}
-                  <img
-                    className="w-5"
-                    src="../../public/images/icons/star.svg"
-                  ></img>{" "}
-                  <img
-                    className="w-5"
-                    src="../../public/images/icons/star.svg"
-                  ></img>{" "}
-                  <img
-                    className="w-5"
-                    src="../../public/images/icons/star.svg"
-                  ></img>
+                  <img className="w-5" src=".././images/icons/star.svg"></img>{" "}
+                  <img className="w-5" src=".././images/icons/star.svg"></img>{" "}
+                  <img className="w-5" src=".././images/icons/star.svg"></img>
                 </div>
                 <h5 className="text-sm font-semibold text-black">4.3</h5>
                 <p className="text-sm text-zinc-700">out of 5 based on</p>
@@ -119,10 +107,7 @@ const Footer = () => {
                   10,002 reviews
                 </h5>
                 <div className="flex gap-1">
-                  <img
-                    className="w-4"
-                    src="../../public/images/icons/star2.svg"
-                  />
+                  <img className="w-4" src=".././images/icons/star2.svg" />
                   <p className="text-sm text-zinc-700">Trustpilot</p>
                 </div>
               </div>
@@ -131,10 +116,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-span-1 flex items-center gap-x-2">
-              <img
-                className="w-10"
-                src="../../public/images/icons/uae_flag.svg"
-              />
+              <img className="w-10" src=".././images/icons/uae_flag.svg" />
               <p className="text-sm font-semibold text-zinc-500">Arabic</p>
             </div>
           </div>
