@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import ProductSlider from "../components/ProductSlider";
 import BestSellers from "../components/BestSellers";
+import { Link } from "react-router-dom";
+import MainProductRail from "../components/MainProductRail";
 
 const Home = () => {
   useEffect(() => {
@@ -21,77 +23,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section className="bg-white p-10">
-        <div className="container mx-auto grid grid-cols-12 gap-x-4">
-          <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
-            <img
-              className="h-72 w-full rounded-2xl"
-              src="/images/product_rails/bath_potty.webp"
-            />
-            <h2 className="mt-5 text-xl font-bold uppercase text-black">
-              Bath & Potty Time
-            </h2>
-            <p className="mt-2 font-serif text-lg leading-snug text-black">
-              Keep your little one clean and comfy with our gentle, safe, and
-              absorbent bath & potty essentials!
-            </p>
-            <button className="my-3 rounded-3xl bg-primary-500 px-5 py-2 text-sm font-bold uppercase group-hover:bg-white group-hover:text-primary-500">
-              Explore More
-            </button>
-          </div>
-          <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
-            <img
-              className="h-72 w-full rounded-2xl"
-              src="/images/product_rails/breast_pumbs.webp"
-            />
-            <h2 className="mt-5 text-xl font-bold uppercase text-black">
-              Breast Pumps
-            </h2>
-            <p className="mt-2 font-serif text-lg leading-snug text-black">
-              A breast pump helps mothers express, store milk, maintain supply,
-              and offers flexibility for feeding schedules, convenience, and
-              returning to work easily.
-            </p>
-            <button className="my-3 rounded-3xl bg-primary-500 px-5 py-2 text-sm font-bold uppercase group-hover:bg-white group-hover:text-primary-500">
-              Explore More
-            </button>
-          </div>
-          <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
-            <img
-              className="h-72 w-full rounded-2xl"
-              src="/images/product_rails/feeding bottle.webp"
-            />
-            <h2 className="mt-5 text-xl font-bold uppercase text-black">
-              Feeding Bottle
-            </h2>
-            <p className="mt-2 font-serif text-lg leading-snug text-black">
-              Our feeding bottles are safe, BPA-free, durable, easy to clean,
-              and designed for comfortable feeding, ensuring a natural and
-              smooth experience.
-            </p>
-            <button className="my-3 rounded-3xl bg-primary-500 px-5 py-2 text-sm font-bold uppercase group-hover:bg-white group-hover:text-primary-500">
-              Explore More
-            </button>
-          </div>
-          <div className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500">
-            <img
-              className="h-72 w-full rounded-2xl"
-              src="/images/product_rails/baby_rattles.webp"
-            />
-            <h2 className="my-5 text-xl font-bold uppercase text-black">
-              Baby Rattles
-            </h2>
-            <p className="mt-2 font-serif text-lg leading-snug text-black">
-              Our baby rattles are safe, colorful, lightweight, and designed to
-              stimulate sensory development, encourage grasping, and provide
-              endless fun for infants.
-            </p>
-            <button className="my-3 rounded-3xl bg-primary-500 px-5 py-2 text-sm font-bold uppercase group-hover:bg-white group-hover:text-primary-500">
-              Explore More
-            </button>
-          </div>
-        </div>
-      </section>
+      <MainProductRail />
       <section className="relative">
         <img src="/images/home_section_banner1.webp" className="w-full" />
         <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
@@ -103,7 +35,7 @@ const Home = () => {
                 Pumbing Life
               </h2>
               <button className="mt-5 rounded-full bg-primary-500 px-12 py-4 text-3xl font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600">
-                Explore More
+                <Link to="/breast-pumbs">Explore More</Link>
               </button>
             </div>
           </div>

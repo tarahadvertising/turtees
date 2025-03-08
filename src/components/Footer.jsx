@@ -101,15 +101,15 @@ const Footer = () => {
                   <img className="w-5" src=".././images/icons/star.svg"></img>{" "}
                   <img className="w-5" src=".././images/icons/star.svg"></img>
                 </div>
-                <h5 className="text-sm font-semibold text-black">4.3</h5>
+                <h5 className="text-sm font-semibold text-black">4.7</h5>
                 <p className="text-sm text-zinc-700">out of 5 based on</p>
                 <h5 className="text-sm font-semibold text-black">
                   10,002 reviews
                 </h5>
-                <div className="flex gap-1">
+                {/* <div className="flex gap-1">
                   <img className="w-4" src=".././images/icons/star2.svg" />
                   <p className="text-sm text-zinc-700">Trustpilot</p>
-                </div>
+                </div> */}
               </div>
               <p className="mt-4 self-center text-center text-sm font-normal text-zinc-600">
                 Copyright © turtees | Designed by tarah.ae

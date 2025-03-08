@@ -21,6 +21,9 @@ export default {
           900: "#044B4A",
         },
       },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(to top, #62aca4, #daf3ef)",
+      },
       animation: {
         slideDown: "slideDown 0.5s ease-in-out forwards",
         MenuSlideDown: "MenuSlideDown 0.5s ease-in-out forwards",

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const products = [
   {
     img: "/images/best_sellers/feeding_bottles.webp",
@@ -6,6 +8,7 @@ const products = [
     description:
       "Our baby bottles feature leak-proof technology, easy-to-clean materials, and a natural nipple shape for safe, comfortable feeding.",
     position: "left-12",
+    link: "/breast-pumbs",
   },
   {
     img: "/images/best_sellers/toys.webp",
@@ -14,6 +17,7 @@ const products = [
     description:
       "Explore our baby toys, designed to stimulate senses, encourage development, and provide hours of safe, colorful fun.",
     position: "right-12",
+    link: "#",
   },
   {
     img: "/images/best_sellers/bath_products.webp",
@@ -22,6 +26,7 @@ const products = [
     description:
       "Our baby bath products are gentle, safe, and nourish delicate skin with hypoallergenic ingredients for soothing bath time.",
     position: "left-12",
+    link: "#",
   },
   {
     img: "/images/best_sellers/moms_collection.webp",
@@ -30,6 +35,7 @@ const products = [
     description:
       "Our mom’s baby products use natural ingredients, ensuring comfort, safety, and well-being with every gentle, reliable use.",
     position: "right-12",
+    link: "#",
   },
   {
     img: "/images/best_sellers/skin_care_products.webp",
@@ -38,6 +44,7 @@ const products = [
     description:
       "Natural care uses pure, gentle ingredients to nourish, protect, and soothe your skin, naturally and safely.",
     position: "left-12",
+    link: "#",
   },
   {
     img: "/images/best_sellers/food_warmer.webp",
@@ -46,10 +53,11 @@ const products = [
     description:
       "Our baby food processor makes fresh, nutritious purees effortlessly, ensuring healthy, homemade meals for your little one.",
     position: "right-12",
+    link: "#",
   },
 ];
 
-const ProductCard = ({ img, title, subtitle, description, position }) => (
+const ProductCard = ({ img, title, subtitle, description, position, link }) => (
   <div className="relative transition-transform duration-300 ease-in-out hover:scale-105">
     <img src={img} alt={title} />
     <div
@@ -60,9 +68,12 @@ const ProductCard = ({ img, title, subtitle, description, position }) => (
         <span className="text-3xl font-semibold uppercase">{subtitle}</span>
         <p className="mt-3 font-serif text-2xl text-black">{description}</p>
       </div>
-      <button className="self-start rounded-full bg-white px-6 py-2 text-2xl font-bold uppercase text-[#c2bfb8] transition-colors duration-200 hover:bg-primary-500 hover:text-white">
+      <Link
+        to={link}
+        className="self-start rounded-full bg-white px-6 py-2 text-2xl font-bold uppercase text-[#c2bfb8] transition-colors duration-200 hover:bg-primary-500 hover:text-white"
+      >
         Explore
-      </button>
+      </Link>
     </div>
   </div>
 );

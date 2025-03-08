@@ -1,8 +1,24 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const location = useLocation();
+  const [activeMenu, setActiveMenu] = useState("");
+
+  useEffect(() => {
+    // Set active menu based on current path
+    if (location.pathname === "/") {
+      setActiveMenu("home");
+    } else if (location.pathname === "/breast-pumbs") {
+      setActiveMenu("breast-pumbs");
+    } else if (location.pathname === "/feeding-bottles") {
+      setActiveMenu("feeding-bottles");
+    } else {
+      setActiveMenu("");
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -98,46 +114,68 @@ const Header = () => {
               </div>
             </div>
             <nav className="col-span-12 hidden md:col-span-8 md:block lg:col-span-12">
-              <div className="mt-6 flex justify-end space-x-6 font-sans font-semibold uppercase tracking-[0.2px] text-zinc-600 md:text-base lg:text-sm">
+              <div className="mt-6 flex justify-end space-x-5 font-semibold uppercase tracking-[0.25px] text-zinc-600 md:text-base lg:text-sm">
                 <Link
                   to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "home" ? "text-primary-600" : ""
+                  }`}
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/feeding-bottles"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "feeding-bottles" ? "text-primary-600" : ""
+                  }`}
                 >
                   Feeding Bottles
                 </Link>
                 <Link
-                  to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  to="/breast-pumbs"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "breast-pumbs" ? "text-primary-600" : ""
+                  }`}
                 >
                   Natural Feedings
                 </Link>
                 <Link
                   to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "" ? "text-primary-600" : ""
+                  }`}
                 >
-                  Baby Accessories
+                  Accessories
                 </Link>
                 <Link
                   to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "" ? "text-primary-600" : ""
+                  }`}
                 >
                   Nature Skin Care
                 </Link>
                 <Link
                   to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "" ? "text-primary-600" : ""
+                  }`}
                 >
                   Bath & Diapering
                 </Link>
                 <Link
                   to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "" ? "text-primary-600" : ""
+                  }`}
                 >
                   Fun Time
                 </Link>
                 <Link
                   to="/"
-                  className="transition-colors duration-200 hover:text-black"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "" ? "text-primary-600" : ""
+                  }`}
                 >
                   Travel & Gear
                 </Link>

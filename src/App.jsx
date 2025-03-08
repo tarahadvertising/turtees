@@ -9,9 +9,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PropTypes from "prop-types";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import BreastPumbs from "./pages/BreastPumbs";
 import InstaPosts from "./components/InstaPosts";
+import FeedingBottles from "./pages/FeedingBottles";
 
 const pageVariants = {
   initial: { opacity: 0, y: 50 },
@@ -40,19 +41,20 @@ function AnimatedRoutes() {
         {[
           { path: "/", element: <Home /> },
           { path: "/breast-pumbs", element: <BreastPumbs /> },
+          { path: "/feeding-bottles", element: <FeedingBottles /> },
         ].map(({ path, element }, index) => (
           <Route
             key={index}
             path={path}
             element={
-              <div
+              <motion.div
                 variants={pageVariants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
               >
                 {element}
-              </div>
+              </motion.div>
             }
           />
         ))}

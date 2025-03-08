@@ -1,4 +1,10 @@
+import BreastPumpProducts from "../components/BreastPumbProducts";
+import { useEffect } from "react";
+
 const BreastPumbs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main>
       <section className="relative">
@@ -171,6 +177,72 @@ const BreastPumbs = () => {
           </div>
         </div>
       </section>
+      <section className="bg-white">
+        <div className="container relative mx-auto">
+          <img
+            src="/images/breast_pumbs/banner3.webp"
+            className="w-full rounded-3xl"
+          />
+          <div className="absolute left-10 top-10 w-full">
+            <div className="col-span-5 flex flex-col">
+              <h2 className="text-left text-5xl font-extrabold uppercase text-black">
+                APP CONTROL
+              </h2>
+              <h6 className="mt-3 text-left text-3xl text-black">
+                Type-C Charging port
+              </h6>
+              <h6 className="mt-14 text-left text-3xl leading-normal text-black">
+                3-4 H Charging time
+                <br />
+                1400 mah Lithium Battery
+                <br />
+                80 min Lasting Time
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white pt-12">
+        <div className="container mx-auto grid grid-cols-12 gap-x-12">
+          <div className="relative col-span-6">
+            <img
+              src="/images/breast_pumbs/banner4.webp"
+              className="w-full rounded-3xl"
+            />
+            <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
+              <h2 className="text-left text-5xl font-semibold uppercase leading-tight text-black">
+                Frequency
+                <br />
+                Conversion
+              </h2>
+              <h6 className="mt-3 text-left text-3xl text-black">
+                small body
+                <br />
+                free your hands
+              </h6>
+            </div>
+          </div>
+          <div className="relative col-span-6">
+            <img
+              src="/images/breast_pumbs/banner5.webp"
+              className="w-full rounded-3xl"
+            />
+            <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
+              <h2 className="text-left text-5xl font-semibold uppercase leading-tight text-black">
+                Exclusive
+                <br />
+                Milk Bottle
+              </h2>
+              <h6 className="mt-3 text-left text-3xl text-black">
+                take out the clave
+                <br />
+                pour breast milk
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <BreastPumpProducts />
     </main>
   );
 };
