@@ -3,10 +3,13 @@ import ProductSlider from "../components/ProductSlider";
 import BestSellers from "../components/BestSellers";
 import { Link } from "react-router-dom";
 import MainProductRail from "../components/MainProductRail";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init();
   }, []);
   return (
     <main>
@@ -28,7 +31,11 @@ const Home = () => {
         <img src="/images/home_section_banner1.webp" className="w-full" />
         <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
           <div className="container mx-auto grid grid-cols-12">
-            <div className="col-span-5 flex flex-col items-center">
+            <div
+              className="col-span-5 flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <h2 className="text-center text-6xl font-semibold uppercase leading-snug text-black">
                 Enjoy Smart
                 <br />
