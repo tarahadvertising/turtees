@@ -52,8 +52,8 @@ const Header = () => {
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="grid grid-cols-12 items-center">
-          <div className="col-span-2 md:col-span-4 lg:col-span-2">
-            <Link className="block w-full lg:w-4/5" to="/">
+          <div className="col-span-3 md:col-span-4 lg:col-span-2">
+            <Link className="block w-11/12 lg:w-4/5" to="/">
               <img
                 src="/images/logo.svg"
                 alt="Logo"
@@ -61,9 +61,9 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className="col-span-10 md:col-span-4 lg:col-span-10">
+          <div className="col-span-9 md:col-span-4 lg:col-span-10">
             <div className="grid grid-cols-12">
-              <div className="relative col-span-10 pl-3 md:col-span-9 md:pl-0">
+              <div className="relative col-span-10 pl-1 md:col-span-9 md:pl-0">
                 <input
                   className="w-full rounded-3xl bg-white px-4 py-3 text-xs placeholder:text-zinc-500 lg:text-sm"
                   type="text"

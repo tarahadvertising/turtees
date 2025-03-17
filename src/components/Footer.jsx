@@ -84,10 +84,13 @@ const Footer = () => {
           <div className="grid grid-cols-12 py-6">
             <div className="col-span-12 lg:col-span-2">
               <a>
-                <img className="w-2/6 lg:w-4/5" src=".././images/logo.svg" />
+                <img
+                  className="mx-auto w-2/6 lg:mx-0 lg:w-4/5"
+                  src=".././images/logo.svg"
+                />
               </a>
             </div>
-            <div className="col-span-12 flex flex-col items-center justify-center lg:col-span-9">
+            <div className="col-span-12 flex items-center justify-center lg:col-span-9 lg:flex-col">
               <div className="flex flex-row items-center gap-x-2">
                 <p className="text-sm text-zinc-700">Our customers say</p>
                 <h5 className="text-sm font-semibold text-black">Excellent</h5>
