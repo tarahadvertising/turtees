@@ -3,63 +3,78 @@ import ProductSlider from "../components/ProductSlider";
 import BestSellers from "../components/BestSellers";
 import { Link } from "react-router-dom";
 import MainProductRail from "../components/MainProductRail";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+
+const scalevariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    AOS.init();
   }, []);
   return (
     <main>
       <section className="relative">
-        <video className="w-full" autoPlay loop muted playsInline>
+        <video
+          className="h-96 w-full object-cover lg:h-auto"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src="/images/home_banner.mp4" type="video/mp4" />
         </video>
-        <div className="absolute bottom-20 flex w-full flex-col items-center">
-          <h2 className="text-center text-6xl font-bold uppercase text-white">
+        <div className="absolute bottom-8 flex w-full flex-col items-center lg:bottom-20">
+          <h2 className="text-center text-2xl font-bold uppercase text-white lg:text-6xl">
             We Make Your Journey Beautiful
           </h2>
-          <button className="mt-5 rounded-lg bg-primary-500 px-4 py-2 text-2xl font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600">
+          <button className="mt-2 rounded-lg bg-primary-500 px-4 py-1 text-base font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:mt-5 lg:py-2 lg:text-2xl">
             Explore
           </button>
         </div>
       </section>
       <MainProductRail />
       <section className="relative">
-        <img src="/images/home_section_banner1.webp" className="w-full" />
+        <img
+          src="/images/home_section_banner1.webp"
+          className="h-60 w-full object-cover object-right lg:h-auto"
+        />
         <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
           <div className="container mx-auto grid grid-cols-12">
-            <div
+            <motion.div
               className="col-span-5 flex flex-col items-center"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
+              variants={scalevariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
             >
-              <h2 className="text-center text-6xl font-semibold uppercase leading-snug text-black">
+              <h2 className="text-center text-xl font-semibold uppercase leading-snug text-black lg:text-6xl lg:leading-normal">
                 Enjoy Smart
                 <br />
                 Pumbing Life
               </h2>
-              <button className="mt-5 rounded-full bg-primary-500 px-12 py-4 text-3xl font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600">
+              <button className="mt-5 rounded-full bg-primary-500 px-4 py-1 text-base font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:px-12 lg:py-4 lg:text-3xl">
                 <Link to="/breast-pumbs">Explore More</Link>
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
-      <section className="bg-primary-50 py-12">
-        <h2 className="mb-8 text-center text-5xl font-bold uppercase text-zinc-700">
+      <section className="bg-primary-50 py-7 lg:py-12">
+        <h2 className="mb-6 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-8 lg:text-5xl">
           Featured Products
         </h2>
         <ProductSlider />
       </section>
-      <section className="bg-white pb-28 pt-12">
+      <section className="bg-white pb-20 pt-7 lg:pb-28 lg:pt-12">
         <div className="container mx-auto">
-          <h2 className="mb-5 text-center text-5xl font-bold uppercase text-zinc-700">
+          <h2 className="mb-3 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Best Sellers
           </h2>
-          <p className="mx-auto mb-12 w-full text-center text-sm leading-loose text-zinc-500">
+          <p className="mx-auto mb-14 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
             Turtees, the epitome of comfort and care for babies, offers a
             comprehensive range of baby essentials. Our feeding bottles are
             designed with precision to provide a seamless feeding experience.
@@ -75,16 +90,23 @@ const Home = () => {
         <img src="/images/home_section_banner2.webp" className="w-full" />
         <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
           <div className="container mx-auto grid grid-cols-12">
-            <div className="col-span-5 flex flex-col items-center">
-              <h2 className="text-center text-6xl font-semibold uppercase leading-snug text-white">
+            <motion.div
+              className="col-span-5 flex flex-col items-center"
+              variants={scalevariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-center text-xl font-semibold uppercase leading-snug text-white lg:text-6xl lg:leading-normal">
                 Smooth Rides,
                 <br />
                 Stylish Gear
               </h2>
-              <button className="mt-5 rounded-full bg-primary-500 px-12 py-4 text-3xl font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600">
+              <button className="mt-5 rounded-full bg-primary-500 px-4 py-1 text-base font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:px-12 lg:py-4 lg:text-3xl">
                 Explore More
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

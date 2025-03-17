@@ -20,7 +20,6 @@ const ProductSlider = () => {
 
   return (
     <Swiper
-      slidesPerView={4}
       spaceBetween={30}
       loop={true}
       speed={3000} // Controls smoothness
@@ -28,6 +27,10 @@ const ProductSlider = () => {
       allowTouchMove={false} // Prevents manual dragging
       modules={[Autoplay]}
       className="mySwiper"
+      breakpoints={{
+        320: { slidesPerView: 2 }, // 2 slides for mobile screens
+        1024: { slidesPerView: 4 }, // 4 slides for desktop
+      }}
     >
       {products.concat(products).map(
         (
@@ -37,10 +40,10 @@ const ProductSlider = () => {
           <SwiperSlide key={index} className="bg-white text-center">
             <img src={product.image} alt={product.title} className="w-full" />
             <div className="flex w-full items-center justify-between p-4">
-              <h3 className="text-left text-xl font-semibold uppercase text-black">
+              <h3 className="text-left text-sm font-semibold uppercase text-black lg:text-xl">
                 {product.title}
               </h3>
-              <button className="rounded-full bg-teal-500 px-3 py-1 text-2xl font-bold text-white transition-colors duration-200 hover:bg-primary-600">
+              <button className="rounded-full bg-teal-500 px-2 py-0 text-base font-bold leading-relaxed text-white transition-colors duration-200 hover:bg-primary-600 lg:px-3 lg:py-1 lg:text-2xl lg:leading-normal">
                 +
               </button>
             </div>

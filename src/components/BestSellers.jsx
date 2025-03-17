@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const scalevariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 const products = [
   {
@@ -7,7 +13,7 @@ const products = [
     subtitle: "Feeding Bottles",
     description:
       "Our baby bottles feature leak-proof technology, easy-to-clean materials, and a natural nipple shape for safe, comfortable feeding.",
-    position: "left-16",
+    position: "left-0 lg:left-16",
     link: "/breast-pumbs",
     bg: "bg-[#c2bfb8]",
     text: "text-black",
@@ -19,7 +25,7 @@ const products = [
     subtitle: "Toys collections",
     description:
       "Explore our baby toys, designed to stimulate senses, encourage development, and provide hours of safe, colorful fun.",
-    position: "right-16",
+    position: "right-0 lg:right-16",
     link: "#",
     bg: "bg-[#716d6c]",
     text: "text-white",
@@ -31,7 +37,7 @@ const products = [
     subtitle: "bath products",
     description:
       "Our baby bath products are gentle, safe, and nourish delicate skin with hypoallergenic ingredients for soothing bath time.",
-    position: "left-16",
+    position: "left-0 lg:left-16",
     link: "#",
     bg: "bg-[#c2bfb8]",
     text: "text-black",
@@ -43,7 +49,7 @@ const products = [
     subtitle: "mom’s collection",
     description:
       "Our mom’s baby products use natural ingredients, ensuring comfort, safety, and well-being with every gentle, reliable use.",
-    position: "right-16",
+    position: "right-0 lg:right-16",
     link: "#",
     bg: "bg-[#716d6c]",
     text: "text-white",
@@ -55,7 +61,7 @@ const products = [
     subtitle: "Skin Care products",
     description:
       "Natural care uses pure, gentle ingredients to nourish, protect, and soothe your skin, naturally and safely.",
-    position: "left-16",
+    position: "left-0 lg:left-16",
     link: "#",
     bg: "bg-[#c2bfb8]",
     text: "text-black",
@@ -67,7 +73,7 @@ const products = [
     subtitle: "Food Warmer & Processor",
     description:
       "Our baby food processor makes fresh, nutritious purees effortlessly, ensuring healthy, homemade meals for your little one.",
-    position: "right-16",
+    position: "right-0 lg:right-16",
     link: "#",
     bg: "bg-[#716d6c]",
     text: "text-white",
@@ -86,29 +92,40 @@ const ProductCard = ({
   text,
   button,
 }) => (
-  <div className="relative transition-transform duration-300 ease-in-out hover:scale-105">
+  <Link
+    className="relative transition-transform duration-300 ease-in-out hover:scale-105"
+    to={link}
+  >
     <img src={img} alt={title} />
-    <div
-      className={`absolute ${position} top-16 flex h-[540px] w-5/12 flex-col justify-between rounded-3xl ${bg} p-7`}
+    <motion.div
+      className={`absolute ${position} -top-9 flex h-[220px] w-1/2 flex-col justify-between rounded-3xl lg:top-16 lg:h-[540px] lg:w-5/12 ${bg} p-3 lg:p-7`}
+      variants={scalevariants}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
     >
       <div>
-        <h3 className="text-5xl font-bold uppercase">{title}</h3>
-        <span className="text-5xl font-semibold uppercase">{subtitle}</span>
-        <p className={`mt-3 font-serif text-3xl ${text}`}>{description}</p>
+        <h3 className="text-base font-bold uppercase lg:text-5xl">{title}</h3>
+        <span className="text-base font-semibold uppercase lg:text-5xl">
+          {subtitle}
+        </span>
+        <p className={`mt-1 font-serif text-sm lg:mt-3 lg:text-3xl ${text}`}>
+          {description}
+        </p>
       </div>
-      <Link
-        to={link}
-        className={`${button} self-start rounded-full bg-white px-6 py-2 text-2xl font-bold uppercase transition-colors duration-200 hover:bg-primary-500 hover:text-white`}
+      <button
+        className={`${button} lg-py-2 mt-2 self-start rounded-full bg-white px-3 py-1 text-xs font-bold uppercase transition-colors duration-200 hover:bg-primary-500 hover:text-white lg:mt-0 lg:px-6 lg:text-2xl`}
       >
         Explore
-      </Link>
-    </div>
-  </div>
+      </button>
+    </motion.div>
+  </Link>
 );
 
 export default function BestSellers() {
   return (
-    <div className="flex flex-wrap gap-28 px-10">
+    <div className="flex flex-wrap gap-16 px-4 lg:gap-28 lg:px-10">
       {products.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}

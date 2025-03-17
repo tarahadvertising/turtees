@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const products = [
   {
@@ -16,7 +14,7 @@ const products = [
     title: "Breast Pumps",
     description:
       "A breast pump helps mothers express, store milk, maintain supply, and offers flexibility for feeding schedules.",
-    link: "/breast-pumps",
+    link: "/breast-pumbs",
   },
   {
     imgSrc: "/images/product_rails/feeding bottle.webp",
@@ -34,32 +32,44 @@ const products = [
   },
 ];
 
-const MainProductRail = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
+const fadeUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.9, delay: index * 0.2 },
+  }),
+};
 
+const MainProductRail = () => {
   return (
-    <section className="bg-white p-10">
-      <div className="container mx-auto grid grid-cols-12 gap-x-4">
+    <section className="bg-white p-3 lg:p-10">
+      <div className="container mx-auto grid grid-cols-12 gap-x-1 lg:gap-x-4">
         {products.map(({ imgSrc, title, description, link }, index) => (
-          <div
+          <motion.div
             key={title}
-            className="group col-span-3 transform rounded-2xl p-3 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500"
-            data-aos="fade-up"
-            data-aos-delay={index * 200}
+            className="col-span-6 lg:col-span-3"
+            variants={fadeUpVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            custom={index}
           >
-            <img className="w-full rounded-2xl" src={imgSrc} alt={title} />
-            <h2 className="mt-5 text-xl font-bold uppercase text-black">
-              {title}
-            </h2>
-            <p className="mt-2 font-serif text-lg leading-snug text-black">
-              {description}
-            </p>
-            <button className="my-3 rounded-3xl bg-primary-500 px-5 py-2 text-sm font-bold uppercase group-hover:bg-white group-hover:text-primary-500">
-              <Link to={link}>Explore More</Link>
-            </button>
-          </div>
+            <Link to={link}>
+              <div className="group transform rounded-2xl p-1 text-center transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary-500 lg:p-3">
+                <img className="w-full rounded-2xl" src={imgSrc} alt={title} />
+                <h2 className="mt-5 text-base font-bold uppercase text-black lg:text-xl">
+                  {title}
+                </h2>
+                <p className="mt-2 font-serif text-base leading-snug text-black lg:text-lg">
+                  {description}
+                </p>
+                <button className="my-3 rounded-3xl bg-primary-500 px-5 py-2 text-xs font-bold uppercase group-hover:bg-white group-hover:text-primary-500 lg:text-sm">
+                  Explore More
+                </button>
+              </div>
+            </Link>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -1,5 +1,16 @@
 import BreastPumpProducts from "../components/BreastPumbProducts";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+
+const scalevariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
+
+const slideUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const BreastPumbs = () => {
   useEffect(() => {
@@ -8,112 +19,157 @@ const BreastPumbs = () => {
   return (
     <main>
       <section className="relative">
-        <img src="/images/breast_pumbs/banner.webp" className="w-full" />
-        <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
+        <img
+          src="/images/breast_pumbs/banner.webp"
+          className="h-72 w-full object-cover lg:h-auto"
+        />
+        <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/3">
           <div className="container mx-auto grid grid-cols-12">
-            <div className="col-span-5 flex flex-col items-center">
-              <h2 className="text-left text-6xl font-semibold uppercase leading-tight text-primary-900">
+            <motion.div
+              className="col-span-5 flex flex-col"
+              variants={slideUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-6xl lg:leading-tight">
                 Electric
                 <br />
                 Breast Pumb
               </h2>
-              <h6 className="mt-3 text-left text-4xl text-primary-900">
+              <h6 className="mt-1 text-left text-lg leading-snug text-black lg:mt-3 lg:text-4xl">
                 enjoy smart pumbing life
               </h6>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
-      <section className="bg-white pb-12 pt-12">
+      <section className="bg-white px-3 py-7 lg:py-12">
         <div className="container mx-auto">
-          <h2 className="mb-5 text-center text-5xl font-bold uppercase text-zinc-700">
+          <h2 className="mb-5 text-center text-xl font-bold uppercase text-zinc-700 lg:text-5xl">
             Hightlights
           </h2>
-          <div className="mt-10 grid grid-cols-2 gap-12">
+          <div className="mt-6 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                className="w-full transform object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 src="/images/breast_pumbs/highlight1.webp"
                 alt=""
               />
-              <h2 className="absolute left-9 top-9 text-4xl font-medium uppercase leading-tight text-primary-800">
+              <motion.h2
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                variants={scalevariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 Core Frequency
                 <br />
                 Conversion
-              </h2>
+              </motion.h2>
             </div>
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                className="transform object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 src="/images/breast_pumbs/highlight2.webp"
                 alt=""
               />
-              <h2 className="absolute left-9 top-9 text-4xl font-medium uppercase leading-tight text-primary-800">
+              <motion.h2
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                variants={scalevariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 4 Modes &<br />
                 36 Levels
-              </h2>
+              </motion.h2>
             </div>
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                className="transform object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 src="/images/breast_pumbs/highlight3.webp"
                 alt=""
               />
-              <h2 className="absolute left-9 top-9 text-4xl font-medium uppercase leading-tight text-primary-800">
+              <motion.h2
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                variants={scalevariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 Wearable
                 <br />
                 Breast
                 <br />
                 Pumb
-              </h2>
+              </motion.h2>
             </div>
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                className="w-full transform object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 src="/images/breast_pumbs/highlight4.webp"
                 alt=""
               />
-              <h2 className="absolute left-9 top-9 text-4xl font-medium uppercase leading-tight text-primary-800">
+              <motion.h2
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                variants={scalevariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 Intellectual
                 <br />
                 Remote
                 <br />
                 Control
-              </h2>
+              </motion.h2>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-white">
+      <section className="bg-white px-3">
         <div className="container relative mx-auto">
           <img
             src="/images/breast_pumbs/banner2.webp"
-            className="w-full rounded-3xl"
+            className="h-60 w-full rounded-3xl object-cover object-left lg:h-auto"
           />
-          <div className="absolute left-10 top-10 w-full">
+          <motion.div
+            className="absolute left-10 top-10 w-full"
+            variants={slideUpVariants}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <div className="col-span-5 flex flex-col">
-              <h2 className="text-left text-5xl font-extrabold uppercase text-black">
+              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-5xl lg:leading-tight">
                 APP CONTROL
               </h2>
-              <h6 className="mt-3 text-left text-3xl text-black">
+              <h6 className="mt-1 text-left text-lg leading-snug text-black lg:mt-3 lg:text-3xl">
                 App Control with
                 <br />
                 Bluetooth Connectivity
               </h6>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section className="bg-white pb-12 pt-12">
+      <section className="bg-white px-3 pb-12 pt-12">
         <div className="container mx-auto">
-          <h2 className="mb-5 text-center text-4xl font-bold uppercase text-zinc-700">
+          <h2 className="mb-3 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Effortless Extraction
           </h2>
-          <h6 className="mb-12 text-center text-3xl font-medium uppercase text-zinc-700">
+          <h6 className="mb-6 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-3xl">
             Upgrade to Efficiency, Upgrade to Portability
           </h6>
           <div className="grid grid-cols-12">
-            <div className="col-span-6">
+            <div className="col-span-12 lg:col-span-6">
               <video
                 className="w-full rounded-3xl"
                 autoPlay
@@ -127,71 +183,85 @@ const BreastPumbs = () => {
                 />
               </video>
             </div>
-            <div className="col-span-6 pl-14 pt-10">
-              <h2 className="mb-5 text-4xl font-bold uppercase text-zinc-700">
+            <motion.div
+              className="col-span-12 pl-0 pt-4 lg:col-span-6 lg:pl-14 lg:pt-10"
+              variants={slideUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="mb-2 text-center text-2xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-left lg:text-4xl">
                 Free Hands
               </h2>
-              <h6 className="mb-12 text-2xl font-medium uppercase text-zinc-700">
+              <h6 className="mb-5 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-left lg:text-2xl">
                 Turtles Wearable Breast Pumb
               </h6>
-              <div className="grid grid-cols-1 gap-16">
+              <div className="grid grid-cols-2 gap-7 text-center lg:grid-cols-1 lg:gap-16 lg:text-left">
                 <div>
-                  <h2 className="text-4xl font-bold uppercase text-primary-700">
+                  <h2 className="text-2xl font-bold uppercase text-primary-700 lg:text-4xl">
                     246G
                   </h2>
                 </div>
                 <div>
-                  <h2 className="text-4xl font-bold uppercase text-primary-700">
+                  <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     72 MM
                   </h2>
-                  <h6 className="mt-2 text-2xl font-medium uppercase text-zinc-700">
+                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Super Thin
                   </h6>
                 </div>
                 <div>
-                  <h2 className="text-4xl font-bold uppercase text-primary-700">
+                  <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     160
                   </h2>
-                  <h6 className="mt-2 text-2xl font-medium uppercase text-zinc-700">
+                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Large Angle
                   </h6>
                 </div>
                 <div>
-                  <h2 className="text-4xl font-bold uppercase text-primary-700">
+                  <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     9 Levels
                   </h2>
-                  <h6 className="mt-2 text-2xl font-medium uppercase text-zinc-700">
+                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Expression Mode
                   </h6>
                 </div>
                 <div>
-                  <h2 className="text-4xl font-bold uppercase text-primary-700">
+                  <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     9 Levels
                   </h2>
-                  <h6 className="mt-2 text-2xl font-medium uppercase text-zinc-700">
+                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Suction Mode
                   </h6>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
-      <section className="bg-white">
+      <section className="bg-white px-3">
         <div className="container relative mx-auto">
           <img
             src="/images/breast_pumbs/banner3.webp"
-            className="w-full rounded-3xl"
+            className="h-56 w-full rounded-3xl object-cover lg:h-auto"
           />
-          <div className="absolute left-10 top-10 w-full">
+          <motion.div
+            className="absolute left-7 top-7 w-full lg:left-10 lg:top-10"
+            variants={slideUpVariants}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <div className="col-span-5 flex flex-col">
-              <h2 className="text-left text-5xl font-extrabold uppercase text-black">
-                APP CONTROL
+              <h2 className="text-left text-xl font-extrabold uppercase text-black lg:text-5xl">
+                Long Lasting Time
               </h2>
-              <h6 className="mt-3 text-left text-3xl text-black">
+              <h6 className="mt-3 text-left text-lg text-black lg:text-3xl">
                 Type-C Charging port
               </h6>
-              <h6 className="mt-14 text-left text-3xl leading-normal text-black">
+              <h6 className="mt-4 text-left text-base leading-normal text-black lg:mt-14 lg:text-3xl">
                 3-4 H Charging time
                 <br />
                 1400 mah Lithium Battery
@@ -199,46 +269,60 @@ const BreastPumbs = () => {
                 80 min Lasting Time
               </h6>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section className="bg-white pt-12">
-        <div className="container mx-auto grid grid-cols-12 gap-x-12">
+      <section className="bg-white px-3 pt-6 lg:pt-12">
+        <div className="container mx-auto grid grid-cols-12 gap-x-3 lg:gap-x-12">
           <div className="relative col-span-6">
             <img
               src="/images/breast_pumbs/banner4.webp"
               className="w-full rounded-3xl"
             />
-            <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
-              <h2 className="text-left text-5xl font-semibold uppercase leading-tight text-black">
+            <motion.div
+              className="absolute left-5 top-1/4 w-full -translate-y-1/2 lg:left-10"
+              variants={slideUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-5xl lg:leading-tight">
                 Frequency
                 <br />
                 Conversion
               </h2>
-              <h6 className="mt-3 text-left text-3xl text-black">
+              <h6 className="mt-1 text-left text-lg text-black lg:mt-3 lg:text-3xl">
                 small body
                 <br />
                 free your hands
               </h6>
-            </div>
+            </motion.div>
           </div>
           <div className="relative col-span-6">
             <img
               src="/images/breast_pumbs/banner5.webp"
               className="w-full rounded-3xl"
             />
-            <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
-              <h2 className="text-left text-5xl font-semibold uppercase leading-tight text-black">
+            <motion.div
+              className="absolute left-5 top-1/4 w-full -translate-y-1/2 lg:left-10"
+              variants={slideUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-5xl lg:leading-tight">
                 Exclusive
                 <br />
                 Milk Bottle
               </h2>
-              <h6 className="mt-3 text-left text-3xl text-black">
+              <h6 className="mt-1 text-left text-lg text-black lg:mt-3 lg:text-3xl">
                 take out the clave
                 <br />
                 pour breast milk
               </h6>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
