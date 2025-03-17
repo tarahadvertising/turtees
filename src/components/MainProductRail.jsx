@@ -43,8 +43,8 @@ const fadeUpVariants = {
 
 const MainProductRail = () => {
   return (
-    <section className="bg-white p-3 lg:p-10">
-      <div className="container mx-auto grid grid-cols-12 gap-x-1 gap-y-5 lg:gap-x-4 lg:gap-y-0">
+    <section className="bg-white px-3 py-6 lg:px-10 lg:py-10">
+      <div className="container mx-auto grid grid-cols-12 gap-x-3 gap-y-4 lg:gap-x-4 lg:gap-y-0">
         {products.map(({ imgSrc, title, description, link }, index) => (
           <motion.div
             key={title}
@@ -56,9 +56,9 @@ const MainProductRail = () => {
             custom={index}
           >
             <Link to={link}>
-              <div className="group grid transform gap-y-3 rounded-2xl p-1 text-center transition-transform duration-300 ease-in-out lg:p-3 lg:hover:scale-105 lg:hover:bg-primary-500">
+              <div className="group grid transform gap-y-2 rounded-2xl p-0 text-center transition-transform duration-300 ease-in-out lg:gap-y-3 lg:p-3 lg:hover:scale-105 lg:hover:bg-primary-500">
                 <img
-                  className="mb-3 w-full rounded-2xl"
+                  className="mb-2 w-full rounded-2xl"
                   src={imgSrc}
                   alt={title}
                 />

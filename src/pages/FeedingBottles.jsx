@@ -25,19 +25,19 @@ const FeedingBottles = () => {
         <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/3">
           <div className="container mx-auto grid grid-cols-12">
             <motion.div
-              className="col-span-5 flex flex-col"
+              className="col-span-6 flex flex-col"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-6xl lg:leading-tight">
+              <h2 className="text-center text-2xl font-semibold uppercase leading-snug text-black lg:text-left lg:text-6xl lg:leading-tight">
                 Nourish
                 <br />
                 Every Moment
               </h2>
-              <h6 className="mt-1 text-left text-lg leading-snug text-black lg:mt-3 lg:text-4xl">
+              <h6 className="mt-1 text-center text-lg leading-snug text-black lg:mt-3 lg:text-left lg:text-4xl">
                 Designed for
                 <br />
                 smooth feeding
@@ -46,20 +46,20 @@ const FeedingBottles = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white px-3 py-7 lg:py-12">
+      <section className="bg-white px-3 py-6 lg:py-12">
         <div className="container mx-auto">
-          <h2 className="mb-5 text-center text-xl font-bold uppercase text-zinc-700 lg:text-5xl">
+          <h2 className="text-center text-xl font-bold uppercase text-zinc-700 lg:text-5xl">
             Hightlights
           </h2>
-          <div className="mt-6 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
+          <div className="mt-4 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
             <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight1.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -73,12 +73,12 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight2.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -90,12 +90,12 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight3.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -107,12 +107,12 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight4.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"

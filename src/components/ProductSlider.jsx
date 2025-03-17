@@ -20,7 +20,6 @@ const ProductSlider = () => {
 
   return (
     <Swiper
-      spaceBetween={30}
       loop={true}
       speed={3000} // Controls smoothness
       autoplay={{ delay: 0, disableOnInteraction: false }}
@@ -28,8 +27,8 @@ const ProductSlider = () => {
       modules={[Autoplay]}
       className="mySwiper"
       breakpoints={{
-        320: { slidesPerView: 2 }, // 2 slides for mobile screens
-        1024: { slidesPerView: 4 }, // 4 slides for desktop
+        320: { slidesPerView: 2, spaceBetween: 10 }, // 2 slides for mobile screens
+        1024: { slidesPerView: 4, spaceBetween: 30 }, // 4 slides for desktop
       }}
     >
       {products.concat(products).map(

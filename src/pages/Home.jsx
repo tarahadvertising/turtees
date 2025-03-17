@@ -41,7 +41,7 @@ const Home = () => {
           src="/images/home_section_banner1.webp"
           className="h-60 w-full object-cover object-right lg:h-auto"
         />
-        <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
+        <div className="absolute left-0 top-1/2 w-full -translate-y-1/2 p-3">
           <div className="container mx-auto grid grid-cols-12">
             <motion.div
               className="col-span-5 flex flex-col items-center"
@@ -51,27 +51,27 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-center text-xl font-semibold uppercase leading-snug text-black lg:text-6xl lg:leading-normal">
+              <h2 className="text-center text-xl font-semibold uppercase leading-normal text-black lg:text-6xl lg:leading-snug">
                 Enjoy Smart
                 <br />
                 Pumbing Life
               </h2>
-              <button className="mt-5 rounded-full bg-primary-500 px-4 py-1 text-base font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:px-12 lg:py-4 lg:text-3xl">
+              <button className="mt-2 rounded-full bg-primary-500 px-4 py-1 text-sm font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:mt-5 lg:px-12 lg:py-4 lg:text-3xl">
                 <Link to="/breast-pumbs">Explore More</Link>
               </button>
             </motion.div>
           </div>
         </div>
       </section>
-      <section className="bg-primary-50 py-7 lg:py-12">
-        <h2 className="mb-6 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-8 lg:text-5xl">
+      <section className="bg-primary-50 py-6 lg:py-12">
+        <h2 className="mb-5 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-8 lg:text-5xl">
           Featured Products
         </h2>
         <ProductSlider />
       </section>
-      <section className="bg-white pb-20 pt-7 lg:pb-28 lg:pt-12">
+      <section className="bg-white pb-16 pt-6 lg:pb-28 lg:pt-12">
         <div className="container mx-auto">
-          <h2 className="mb-3 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
+          <h2 className="mb-2 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Best Sellers
           </h2>
           <p className="mx-auto mb-14 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
@@ -87,8 +87,11 @@ const Home = () => {
         </div>
       </section>
       <section className="relative">
-        <img src="/images/home_section_banner2.webp" className="w-full" />
-        <div className="absolute left-0 top-1/2 w-full -translate-y-1/2">
+        <img
+          src="/images/home_section_banner2.webp"
+          className="h-60 w-full object-cover lg:h-auto"
+        />
+        <div className="absolute left-0 top-1/2 w-full -translate-y-1/2 p-3">
           <div className="container mx-auto grid grid-cols-12">
             <motion.div
               className="col-span-5 flex flex-col items-center"
@@ -98,12 +101,12 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-center text-xl font-semibold uppercase leading-snug text-white lg:text-6xl lg:leading-normal">
+              <h2 className="text-center text-xl font-semibold uppercase leading-normal text-white lg:text-6xl lg:leading-snug">
                 Smooth Rides,
                 <br />
                 Stylish Gear
               </h2>
-              <button className="mt-5 rounded-full bg-primary-500 px-4 py-1 text-base font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:px-12 lg:py-4 lg:text-3xl">
+              <button className="mt-2 rounded-full bg-primary-500 px-4 py-1 text-sm font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:mt-5 lg:px-12 lg:py-4 lg:text-3xl">
                 Explore More
               </button>
             </motion.div>

@@ -93,12 +93,12 @@ const ProductCard = ({
   button,
 }) => (
   <Link
-    className="relative transition-transform duration-300 ease-in-out hover:scale-105"
+    className="relative transition-transform duration-300 ease-in-out lg:hover:scale-105"
     to={link}
   >
     <img src={img} alt={title} />
     <motion.div
-      className={`absolute ${position} -top-9 flex h-[220px] w-1/2 flex-col justify-between rounded-3xl lg:top-16 lg:h-[540px] lg:w-5/12 ${bg} p-3 lg:p-7`}
+      className={`absolute ${position} -top-9 flex h-[220px] w-1/2 flex-col justify-between rounded-2xl lg:top-16 lg:h-[540px] lg:w-5/12 ${bg} p-3 lg:p-7`}
       variants={scalevariants}
       initial="hidden"
       whileInView="visible"
@@ -106,11 +106,15 @@ const ProductCard = ({
       viewport={{ once: true }}
     >
       <div>
-        <h3 className="text-base font-bold uppercase lg:text-5xl">{title}</h3>
-        <span className="text-base font-semibold uppercase lg:text-5xl">
+        <h3 className="text-sm font-bold uppercase leading-tight lg:text-5xl lg:leading-snug">
+          {title}
+        </h3>
+        <span className="text-sm font-semibold uppercase leading-tight lg:text-5xl">
           {subtitle}
         </span>
-        <p className={`mt-1 font-serif text-sm lg:mt-3 lg:text-3xl ${text}`}>
+        <p
+          className={`mt-1 font-serif text-sm leading-tight lg:mt-3 lg:text-3xl ${text}`}
+        >
           {description}
         </p>
       </div>
@@ -125,7 +129,7 @@ const ProductCard = ({
 
 export default function BestSellers() {
   return (
-    <div className="flex flex-wrap gap-16 px-4 lg:gap-28 lg:px-10">
+    <div className="flex flex-wrap gap-16 px-3 lg:gap-28 lg:px-10">
       {products.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}

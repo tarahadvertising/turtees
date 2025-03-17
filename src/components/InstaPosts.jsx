@@ -19,12 +19,12 @@ const InstaPosts = () => {
   ];
 
   return (
-    <section className="bg-primary-50 px-3 py-7 lg:px-0 lg:py-12">
+    <section className="bg-primary-50 px-3 py-6 lg:px-0 lg:py-12">
       <div className="container mx-auto">
-        <h2 className="mb-3 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
+        <h2 className="mb-2 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
           The Edit
         </h2>
-        <p className="mx-auto mb-7 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
+        <p className="mx-auto mb-5 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
           The Edit is here to guide you through this incredible journey. We work
           with parenting experts to offer the advice and support you really
           need, talk to parents about their real-life experiences – plus there’s
