@@ -6,7 +6,7 @@ const products = [
     imgSrc: "/images/product_rails/bath_potty.webp",
     title: "Bath & Potty Time",
     description:
-      "Keep your little one clean, comfy, and happy with our gentle, safe, and ultra-absorbent bath & potty essentials, designed for the best care every day with love!",
+      "Keep your little one clean, comfy, and happy with our gentle, safe, and ultra-absorbent bath & potty essentials, designed for the best care every day!",
     link: "#",
   },
   {
@@ -20,14 +20,14 @@ const products = [
     imgSrc: "/images/product_rails/feeding bottle.webp",
     title: "Feeding Bottle",
     description:
-      "Our feeding bottles are safe, BPA-free, durable, easy to clean, and designed for comfortable feeding, ensuring a hassle-free and enjoyable experience for babies.",
+      "Our feeding bottles are safe, BPA-free, durable, easy to clean, and designed for comfortable feeding, ensuring a hassle-free and enjoyable experience.",
     link: "/feeding-bottles",
   },
   {
     imgSrc: "/images/product_rails/baby_rattles.webp",
     title: "Baby Rattles",
     description:
-      "Our baby rattles are safe, colorful, lightweight, and designed to stimulate sensory development for infants, helping them explore, learn, and have fun every day.",
+      "Our baby rattles are safe, colorful, lightweight, and designed to stimulate sensory development for infants, helping them explore, learn, and have fun.",
     link: "#",
   },
 ];

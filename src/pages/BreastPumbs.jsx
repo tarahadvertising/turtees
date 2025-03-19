@@ -23,7 +23,7 @@ const BreastPumbs = () => {
           src="/images/breast_pumbs/banner.webp"
           className="h-72 w-full object-cover lg:h-auto"
         />
-        <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/3">
+        <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/2">
           <div className="container mx-auto grid grid-cols-12">
             <motion.div
               className="col-span-5 flex flex-col"
@@ -33,12 +33,12 @@ const BreastPumbs = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-center text-2xl font-semibold uppercase leading-snug text-black lg:text-left lg:text-6xl lg:leading-tight">
+              <h2 className="text-center text-2xl font-semibold uppercase leading-snug text-primary-800 lg:text-left lg:text-6xl lg:leading-tight">
                 Electric
                 <br />
                 Breast Pumb
               </h2>
-              <h6 className="mt-1 text-center text-lg leading-snug text-black lg:mt-3 lg:text-left lg:text-4xl">
+              <h6 className="mt-1 text-center text-lg leading-snug text-primary-800 lg:mt-3 lg:text-left lg:text-4xl">
                 enjoy smart pumbing life
               </h6>
             </motion.div>
