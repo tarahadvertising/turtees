@@ -106,7 +106,7 @@ const ProductCard = ({
     <img
       src={img}
       alt={title}
-      className={`h-96 rounded-3xl object-cover ${img_position} lg:h-auto`}
+      className={`h-80 rounded-3xl object-cover ${img_position} lg:h-auto`}
     />
     <motion.div
       className={`lg:absolute ${position} relative mx-auto -mt-20 flex h-auto w-10/12 flex-col justify-between rounded-2xl lg:top-16 lg:-m-0 lg:h-[540px] lg:w-5/12 ${bg} p-5 lg:p-7`}

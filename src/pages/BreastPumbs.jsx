@@ -26,7 +26,7 @@ const BreastPumbs = () => {
         <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/2">
           <div className="container mx-auto grid grid-cols-12">
             <motion.div
-              className="col-span-5 flex flex-col"
+              className="col-span-7 flex flex-col"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
@@ -158,10 +158,10 @@ const BreastPumbs = () => {
       </section>
       <section className="bg-white px-3 py-6 lg:py-12">
         <div className="container mx-auto">
-          <h2 className="mb-3 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
+          <h2 className="mb-1 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Effortless Extraction
           </h2>
-          <h6 className="mb-4 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-3xl">
+          <h6 className="mb-3 text-center text-base font-medium uppercase text-zinc-700 lg:mb-12 lg:text-3xl">
             Upgrade to Efficiency, Upgrade to Portability
           </h6>
           <div className="grid grid-cols-12">
@@ -187,10 +187,10 @@ const BreastPumbs = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="mb-2 text-center text-2xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-left lg:text-4xl">
+              <h2 className="mb-1 text-center text-2xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-left lg:text-4xl">
                 Free Hands
               </h2>
-              <h6 className="mb-5 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-left lg:text-2xl">
+              <h6 className="mb-4 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-left lg:text-2xl">
                 Turtles Wearable Breast Pumb
               </h6>
               <div className="grid grid-cols-2 gap-7 text-center lg:grid-cols-1 lg:gap-16 lg:text-left">
@@ -203,7 +203,7 @@ const BreastPumbs = () => {
                   <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     72 MM
                   </h2>
-                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
+                  <h6 className="mt-1 text-base font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Super Thin
                   </h6>
                 </div>
@@ -211,7 +211,7 @@ const BreastPumbs = () => {
                   <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     160
                   </h2>
-                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
+                  <h6 className="mt-1 text-base font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Large Angle
                   </h6>
                 </div>
@@ -219,7 +219,7 @@ const BreastPumbs = () => {
                   <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     9 Levels
                   </h2>
-                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
+                  <h6 className="mt-1 text-base font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Expression Mode
                   </h6>
                 </div>
@@ -227,7 +227,7 @@ const BreastPumbs = () => {
                   <h2 className="lg;text-4xl text-2xl font-bold uppercase text-primary-700">
                     9 Levels
                   </h2>
-                  <h6 className="mt-1 text-lg font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
+                  <h6 className="mt-1 text-base font-medium uppercase text-zinc-700 lg:mt-2 lg:text-2xl">
                     Suction Mode
                   </h6>
                 </div>

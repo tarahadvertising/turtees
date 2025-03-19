@@ -25,7 +25,7 @@ const FeedingBottles = () => {
         <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/3">
           <div className="container mx-auto grid grid-cols-12">
             <motion.div
-              className="col-span-6 flex flex-col"
+              className="col-span-7 flex flex-col"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
