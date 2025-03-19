@@ -51,7 +51,7 @@ const products = [
 
 const BreastPumpProducts = () => {
   return (
-    <section className="bg-white px-3 py-12">
+    <section className="bg-white px-3 py-6 lg:py-12">
       <div className="container mx-auto">
         <h2 className="mb-5 text-center text-xl font-bold uppercase text-zinc-700 lg:text-4xl">
           Continue to explore breast pumps

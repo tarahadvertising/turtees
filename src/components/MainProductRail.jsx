@@ -6,28 +6,28 @@ const products = [
     imgSrc: "/images/product_rails/bath_potty.webp",
     title: "Bath & Potty Time",
     description:
-      "Keep your little one clean and comfy with our gentle, safe, and absorbent bath & potty essentials!",
+      "Keep your little one clean, comfy, and happy with our gentle, safe, and ultra-absorbent bath & potty essentials, designed for the best care every day with love!",
     link: "#",
   },
   {
     imgSrc: "/images/product_rails/breast_pumbs.webp",
     title: "Breast Pumps",
     description:
-      "A breast pump helps mothers express, store milk, maintain supply, and offers flexibility for feeding schedules.",
+      "A breast pump helps mothers express and store milk, maintain supply, and offers flexibility for feeding schedules, ensuring convenience and nourishment.",
     link: "/breast-pumbs",
   },
   {
     imgSrc: "/images/product_rails/feeding bottle.webp",
     title: "Feeding Bottle",
     description:
-      "Our feeding bottles are safe, BPA-free, durable, easy to clean, and designed for comfortable feeding.",
+      "Our feeding bottles are safe, BPA-free, durable, easy to clean, and designed for comfortable feeding, ensuring a hassle-free and enjoyable experience for babies.",
     link: "/feeding-bottles",
   },
   {
     imgSrc: "/images/product_rails/baby_rattles.webp",
     title: "Baby Rattles",
     description:
-      "Our baby rattles are safe, colorful, lightweight, and designed to stimulate sensory development for infants.",
+      "Our baby rattles are safe, colorful, lightweight, and designed to stimulate sensory development for infants, helping them explore, learn, and have fun every day.",
     link: "#",
   },
 ];

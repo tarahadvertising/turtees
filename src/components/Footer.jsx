@@ -8,11 +8,13 @@ const Footer = () => {
               <h6 className="text-sm font-semibold text-zinc-500">
                 Contact Us
               </h6>
-              <p className="mt-1 text-xs text-zinc-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                consequatur sunt possimus hic eaque commodi, cupiditate eum
-                omnis quidem! Aliquid, fuga quod ut ad necessitatibus nobis quam
-                sapiente quasi molestias?
+              <p className="mt-1 text-xs leading-relaxed text-zinc-500">
+                Turtees of Scotland, 22k Riverside Drive, Aberdeen Scotland,
+                United Kingdom UAE, KSA, Bahrain, Qatar, Oman, Kuwait, Jordan,
+                UK, India, China, Hongkong
+                <br />
+                <br />
+                export@turteesglobal.com
               </p>
             </div>
             <div className="col-span-12 lg:col-span-4">

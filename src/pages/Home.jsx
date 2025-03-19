@@ -69,12 +69,12 @@ const Home = () => {
         </h2>
         <ProductSlider />
       </section>
-      <section className="bg-white pb-16 pt-6 lg:pb-28 lg:pt-12">
+      <section className="bg-white pb-6 pt-6 lg:pb-28 lg:pt-12">
         <div className="container mx-auto">
           <h2 className="mb-2 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Best Sellers
           </h2>
-          <p className="mx-auto mb-14 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
+          <p className="mx-auto mb-4 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
             Turtees, the epitome of comfort and care for babies, offers a
             comprehensive range of baby essentials. Our feeding bottles are
             designed with precision to provide a seamless feeding experience.

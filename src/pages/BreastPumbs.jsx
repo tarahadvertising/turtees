@@ -33,32 +33,32 @@ const BreastPumbs = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-6xl lg:leading-tight">
+              <h2 className="text-center text-2xl font-semibold uppercase leading-snug text-black lg:text-left lg:text-6xl lg:leading-tight">
                 Electric
                 <br />
                 Breast Pumb
               </h2>
-              <h6 className="mt-1 text-left text-lg leading-snug text-black lg:mt-3 lg:text-4xl">
+              <h6 className="mt-1 text-center text-lg leading-snug text-black lg:mt-3 lg:text-left lg:text-4xl">
                 enjoy smart pumbing life
               </h6>
             </motion.div>
           </div>
         </div>
       </section>
-      <section className="bg-white px-3 py-7 lg:py-12">
+      <section className="bg-white px-3 pb-3 pt-6 lg:pb-12 lg:pt-12">
         <div className="container mx-auto">
-          <h2 className="mb-5 text-center text-xl font-bold uppercase text-zinc-700 lg:text-5xl">
+          <h2 className="text-center text-xl font-bold uppercase text-zinc-700 lg:text-5xl">
             Hightlights
           </h2>
-          <div className="mt-6 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
-            <div className="relative overflow-hidden rounded-3xl">
+          <div className="mt-4 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
+            <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/breast_pumbs/highlight1.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -70,14 +70,14 @@ const BreastPumbs = () => {
                 Conversion
               </motion.h2>
             </div>
-            <div className="relative overflow-hidden rounded-3xl">
+            <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/breast_pumbs/highlight2.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -88,14 +88,14 @@ const BreastPumbs = () => {
                 36 Levels
               </motion.h2>
             </div>
-            <div className="relative overflow-hidden rounded-3xl">
+            <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/breast_pumbs/highlight3.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -104,19 +104,17 @@ const BreastPumbs = () => {
               >
                 Wearable
                 <br />
-                Breast
-                <br />
-                Pumb
+                Breast Pumb
               </motion.h2>
             </div>
-            <div className="relative overflow-hidden rounded-3xl">
+            <div className="relative overflow-hidden">
               <img
-                className="w-full transform rounded-3xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/breast_pumbs/highlight4.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-tight text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -125,9 +123,7 @@ const BreastPumbs = () => {
               >
                 Intellectual
                 <br />
-                Remote
-                <br />
-                Control
+                Remote Control
               </motion.h2>
             </div>
           </div>
@@ -160,12 +156,12 @@ const BreastPumbs = () => {
           </motion.div>
         </div>
       </section>
-      <section className="bg-white px-3 pb-12 pt-12">
+      <section className="bg-white px-3 py-6 lg:py-12">
         <div className="container mx-auto">
           <h2 className="mb-3 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Effortless Extraction
           </h2>
-          <h6 className="mb-6 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-3xl">
+          <h6 className="mb-4 text-center text-lg font-medium uppercase text-zinc-700 lg:mb-12 lg:text-3xl">
             Upgrade to Efficiency, Upgrade to Portability
           </h6>
           <div className="grid grid-cols-12">

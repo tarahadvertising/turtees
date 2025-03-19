@@ -30,7 +30,7 @@ const InstaPosts = () => {
           need, talk to parents about their real-life experiences – plus there’s
           a whole lot of inspiration and escapism too.
         </p>
-        <div className="grid w-full grid-cols-2 gap-x-4 lg:grid-cols-5">
+        <div className="grid w-full grid-cols-5 gap-x-4">
           {images.map((src, index) => (
             <motion.div
               key={index}
@@ -40,7 +40,7 @@ const InstaPosts = () => {
               viewport={{ once: true, amount: 0.2 }}
               custom={index}
             >
-              <a className="block transform transition-transform duration-300 hover:rotate-[-2deg]">
+              <a className="block transform transition-transform duration-300 lg:hover:rotate-[-2deg]">
                 <img src={src} alt={`Instagram Link ${index + 1}`} />
               </a>
             </motion.div>

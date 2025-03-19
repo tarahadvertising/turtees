@@ -46,7 +46,7 @@ const FeedingBottles = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white px-3 py-6 lg:py-12">
+      <section className="bg-white px-3 pb-3 pt-6 lg:pb-12 lg:pt-12">
         <div className="container mx-auto">
           <h2 className="text-center text-xl font-bold uppercase text-zinc-700 lg:text-5xl">
             Hightlights
@@ -54,12 +54,12 @@ const FeedingBottles = () => {
           <div className="mt-4 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
             <div className="relative overflow-hidden">
               <img
-                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight1.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -73,12 +73,12 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight2.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -90,7 +90,7 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight3.webp"
                 alt=""
               />
@@ -107,12 +107,12 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="h-36 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight4.webp"
                 alt=""
               />
               <motion.h2
-                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-4xl"
+                className="unset left-3 top-9 my-2 flex justify-center text-center text-base font-medium uppercase leading-normal text-primary-800 lg:absolute lg:left-9 lg:my-0 lg:text-left lg:text-4xl"
                 variants={scalevariants}
                 initial="hidden"
                 whileInView="visible"
@@ -129,7 +129,7 @@ const FeedingBottles = () => {
         <div className="container relative mx-auto">
           <img
             src="/images/feeding_bottles/banner2.webp"
-            className="h-60 w-full rounded-3xl object-cover object-left lg:h-auto"
+            className="h-64 w-full rounded-3xl object-cover object-left lg:h-auto"
           />
           <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
             <motion.div
@@ -154,7 +154,7 @@ const FeedingBottles = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white px-3 py-7 lg:px-6 lg:py-12">
+      <section className="bg-white px-3 py-6 lg:px-6 lg:py-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 rounded-3xl bg-custom-gradient p-2 lg:grid-cols-3 lg:p-6">
             <motion.div
@@ -254,11 +254,11 @@ const FeedingBottles = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white px-3 py-12">
+      <section className="bg-white px-3 py-6 lg:py-12">
         <div className="container relative mx-auto">
           <img
             src="/images/feeding_bottles/banner5.webp"
-            className="h-32 w-full rounded-3xl object-cover object-center lg:h-auto"
+            className="h-40 w-full rounded-3xl object-cover object-center lg:h-auto"
           />
           <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
             <motion.div

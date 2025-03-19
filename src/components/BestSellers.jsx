@@ -18,6 +18,7 @@ const products = [
     bg: "bg-[#c2bfb8]",
     text: "text-black",
     button: "text-[#c2bfb8]",
+    img_position: "object-right",
   },
   {
     img: "/images/best_sellers/toys.webp",
@@ -30,6 +31,7 @@ const products = [
     bg: "bg-[#716d6c]",
     text: "text-white",
     button: "text-[#716d6c]",
+    img_position: "object-left",
   },
   {
     img: "/images/best_sellers/bath_products.webp",
@@ -42,6 +44,7 @@ const products = [
     bg: "bg-[#c2bfb8]",
     text: "text-black",
     button: "text-[#c2bfb8]",
+    img_position: "object-right",
   },
   {
     img: "/images/best_sellers/moms_collection.webp",
@@ -54,6 +57,7 @@ const products = [
     bg: "bg-[#716d6c]",
     text: "text-white",
     button: "text-[#716d6c]",
+    img_position: "object-left",
   },
   {
     img: "/images/best_sellers/skin_care_products.webp",
@@ -66,6 +70,7 @@ const products = [
     bg: "bg-[#c2bfb8]",
     text: "text-black",
     button: "text-[#c2bfb8]",
+    img_position: "object-right",
   },
   {
     img: "/images/best_sellers/food_warmer.webp",
@@ -78,6 +83,7 @@ const products = [
     bg: "bg-[#716d6c]",
     text: "text-white",
     button: "text-[#716d6c]",
+    img_position: "object-left",
   },
 ];
 
@@ -91,14 +97,19 @@ const ProductCard = ({
   bg,
   text,
   button,
+  img_position,
 }) => (
   <Link
     className="relative transition-transform duration-300 ease-in-out lg:hover:scale-105"
     to={link}
   >
-    <img src={img} alt={title} />
+    <img
+      src={img}
+      alt={title}
+      className={`h-96 rounded-3xl object-cover ${img_position} lg:h-auto`}
+    />
     <motion.div
-      className={`absolute ${position} -top-9 flex h-[220px] w-1/2 flex-col justify-between rounded-2xl lg:top-16 lg:h-[540px] lg:w-5/12 ${bg} p-3 lg:p-7`}
+      className={`lg:absolute ${position} relative mx-auto -mt-20 flex h-auto w-10/12 flex-col justify-between rounded-2xl lg:top-16 lg:-m-0 lg:h-[540px] lg:w-5/12 ${bg} p-5 lg:p-7`}
       variants={scalevariants}
       initial="hidden"
       whileInView="visible"
@@ -129,7 +140,7 @@ const ProductCard = ({
 
 export default function BestSellers() {
   return (
-    <div className="flex flex-wrap gap-16 px-3 lg:gap-28 lg:px-10">
+    <div className="flex flex-wrap gap-4 px-3 lg:gap-28 lg:px-10">
       {products.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}
